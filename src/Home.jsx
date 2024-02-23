@@ -2,7 +2,11 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>Home</div>
+    <nav className="navbar bg-body-tertiary">
+  <div className="container-fluid">
+    <a className="navbar-brand mb-0 h1 " href="#">zomato</a>
+  </div>
+</nav>
   )
 }
 
