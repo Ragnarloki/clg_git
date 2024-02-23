@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
+import Card from './components/Card'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "jquery/dist/jquery.min.js"
 import 'bootstrap/dist/js/bootstrap.min.js'
-import Card from './components/Card'
 import Home from './Home'
 import contents from '../contents'
-
+import './components/Card.css'
 
 function createCard(content){
   return (<Card 
@@ -19,8 +19,10 @@ function App() {
   return (
     <div>
       <Home/>
-      {contents.map(createCard)}
+      <div className='container'>
       
+      {contents.map(createCard)}
+      </div>  
     </div>
   )
 }
